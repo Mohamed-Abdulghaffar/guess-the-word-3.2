@@ -11,32 +11,106 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .card {
   padding: 2em;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.read-the-docs {
-  color: #888;
+.word-display {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin: 1rem 0;
+}
+
+.guessed-letters {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.guesses-remaining {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.rocket-container {
+  margin: 2rem 0;
+}
+
+.rocket-image {
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.rocket-image:hover {
+  transform: scale(1.1);
+}
+
+.guess-form {
+  margin: 1rem 0;
+}
+
+.guess-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #646cff;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.guess-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.guess-button:hover {
+  background-color: #535bf2;
+}
+
+.error-message {
+  color: #f44336;
+  margin: 0.5rem 0;
+}
+
+.game-over-message {
+  margin: 2rem 0;
+}
+
+.win-message {
+  color: #4caf50;
+}
+
+.lose-message {
+  color: #f44336;
+}
+
+.revealed-word {
+  font-weight: bold;
+  color: #646cff;
+}
+
+.play-again-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.play-again-button:hover {
+  background-color: #535bf2;
 }
